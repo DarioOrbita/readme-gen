@@ -62,7 +62,11 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(userInput => {
+        writeToFile('dist_README.md', generateMarkdown(userInput));
+    });
+}
 
 // Function call to initialize app
 init();
