@@ -27,7 +27,7 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'liscense',
+        name: 'license',
         choices: ['MIT', 'Apache', 'BSD']
     },
     {
