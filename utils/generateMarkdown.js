@@ -88,8 +88,51 @@ Unless required by applicable law or agreed to in writing, software distributed 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge()}
 
+  ${renderLicenseBadge(data.license)}
+
+  ## **Description**
+  ${data.description}
+
+  <br/>
+
+  ## **Built With:**
+
+  <br/>
+
+  ## **Installation**
+  ${data.installation}
+
+  <br/>
+
+  ## **Usage**
+  ${data.usage}
+
+  <br/>
+
+  ## **Contribute**
+  ${data.contribution}
+
+  <br/>
+
+  ## **Testing**
+  ${data.testing}
+
+  <br/>
+
+  ## **Got Questions?**
+  Feel free to reach out with questions or comments regarding this app! 
+
+  GitHub: ${data.username}
+  Email: ${data.email}
+
+  <br/>
+
+  ## **License**
+  ${renderLicenseSection(data.license)}
+
+  ${renderLicenseLink(data.license)}
+  
 `;
 }
 
