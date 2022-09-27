@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  return `![License: MIT](https://img.shields.io/badge/License-MIT-20A7FF.svg)`
+function renderLicenseBadge(githubId, license) {
+  return `[![GitHub license](https://img.shields.io/github/license/${githubId}/readme-gen?style=for-the-badge)](./LICENSE.md)`
 }
 
 // TODO: Create a function that returns the license link
